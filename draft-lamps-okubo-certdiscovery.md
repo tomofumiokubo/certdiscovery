@@ -19,11 +19,11 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
+title: "A Mechanism for X.509 Certificate Discovery"
 abbrev: "TODO - Abbreviation"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-lamps-okubo-certdiscovery-latest
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
 number:
 date:
