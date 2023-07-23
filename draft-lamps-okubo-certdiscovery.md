@@ -61,7 +61,7 @@ Second, the proposed method improves operational availability by introducing red
 
 The proposed method is designed to maximize compatibility with existing systems, including legacy implementations. It leverages the SIA extension, which is already established in X.509 certificates, and does not require modifications to the referring certificates. This ensures ease of adoption and avoids disruptions to current certificate management practices.
 
-It's important to note that this specification does not aim to solve or assure the identity (subject) binding between the primary and secondary certificates. Instead, it focuses on providing a mechanism for efficient certificate discovery, while identity assurance can be addressed through complementary mechanisms such as {{draft-becker-guthrie-cert-binding-for-multi-auth-02}}.
+It's important to note that this specification does not aim to solve or assure the identity (subject) binding between the primary and secondary certificates. Instead, it focuses on providing a mechanism for efficient certificate discovery, while identity assurance can be addressed through complementary mechanisms such as draft-becker-guthrie-cert-binding-for-multi-auth-02.
 
 In the following sections, we will outline the details of the proposed approach, including the structure of the SIA extension, the modes of operation, and the considerations for secure implementation and deployment.
 
@@ -103,7 +103,7 @@ Secondary Certificate: The X.509 certificate that is referenced by the Primary C
 
 # Certificate Discovery Access Method Certificates
 
-This document specifies the new certDiscovery access method for X.509 Subject Information Access (SIA) extension defined in {{rfc5280}}.
+This document specifies the new certDiscovery access method for X.509 Subject Information Access (SIA) extension defined in {{!RFC5280}}.
 The certDiscovery access method has 3 components. The relatedCertificateLocation which is a GeneralName that has the pointer to the Secondary Certificate. The relatedCertificateSignatureAlgorithm which indicates the signature algorithm used in the Secondary Certificate. Finally, the relatedCertificatePublicKeyAlgorithm which indicates the public key algorithm used in the Secondary Certificate.
 
 When the validation of the Primary Certificate fails, the software that understands the SIA extension and the certDiscovery access method uses the information to determine whether or not to fetch the Secondary Certificate. The software will look at the relatedCertificateSignatureAlgorithm and relatedCertificatePublicKeyAlgorithm to determine whether the Secondary Certificate has the signature algorithm and certificate public key algorthm it can process. If the software understands the signature algorithm and certificate public key algorthm, the software fetches the certificate from the URI specified in the relatedCertificateLocation and attempt another validation. Otherwise, the validation simply fails.
@@ -139,7 +139,7 @@ The semantics of other id-ad-certdiscovery accessLocation name forms
 
 # Security Considerations
 
-This mechanism does not assure the binding of the identity of the subject in the Primary Certificate and the Secondary Certificate. To assure the binding of identities of the two certificate, a confirming CA should adopt a separate mechanism such as {{draft-becker-guthrie-cert-binding-for-multi-auth-02}} for to explicitly express the binding of identities.
+This mechanism does not assure the binding of the identity of the subject in the Primary Certificate and the Secondary Certificate. To assure the binding of identities of the two certificate, a confirming CA should adopt a separate mechanism such as draft-becker-guthrie-cert-binding-for-multi-auth-02 for to explicitly express the binding of identities.
 
 There is a chance the Secondary Certificate may also have the certDiscovery access method. In order to avoid cyclic loops or infinite chaining, the validator should be mindful of how many fetching it allows in one validation.
 
