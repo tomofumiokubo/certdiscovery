@@ -41,7 +41,6 @@ normative:
  - 2119
  - 5280
  - 8174
- - X.680
 
 informative:
  - 7299
