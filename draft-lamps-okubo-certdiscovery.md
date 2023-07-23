@@ -38,12 +38,12 @@ author:
     email: john.gray@entrust.com
 
 normative:
- - 2119
- - 5280
- - 8174
+  2119
+  5280
+  8174
 
 informative:
- - 7299
+  7299
 
 --- abstract
 
