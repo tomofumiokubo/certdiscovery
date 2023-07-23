@@ -1,7 +1,7 @@
 ---
 title: "A Mechanism for X.509 Certificate Discovery"
 abbrev: "TODO - Abbreviation"
-category: info
+category: std
 docname: draft-lamps-okubo-certdiscovery-latest
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
 number:
