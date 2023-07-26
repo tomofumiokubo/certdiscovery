@@ -2,16 +2,16 @@
 
 This is the working area for the individual Internet-Draft, "A Mechanism for X.509 Certificate Discovery".
 
-* [Editor's Copy](https://CBonnell.github.io/certdiscovery/#go.draft-lamps-okubo-certdiscovery.html)
+* [Editor's Copy](https://tomofumiokubo.github.io/certdiscovery/#go.draft-lamps-okubo-certdiscovery.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-lamps-okubo-certdiscovery)
 * [Individual Draft](https://datatracker.ietf.org/doc/html/draft-lamps-okubo-certdiscovery)
-* [Compare Editor's Copy to Individual Draft](https://CBonnell.github.io/certdiscovery/#go.draft-lamps-okubo-certdiscovery.diff)
+* [Compare Editor's Copy to Individual Draft](https://tomofumiokubo.github.io/certdiscovery/#go.draft-lamps-okubo-certdiscovery.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/CBonnell/certdiscovery/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/tomofumiokubo/certdiscovery/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.

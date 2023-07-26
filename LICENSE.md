@@ -1,4 +1,4 @@
 # License
 
 See the
-[guidelines for contributions](https://github.com/CBonnell/certdiscovery/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/tomofumiokubo/certdiscovery/blob/main/CONTRIBUTING.md).
